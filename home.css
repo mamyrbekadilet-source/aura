@@ -15,7 +15,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: var(--ink);
-    background-image: url(img/gradient-purple-color-abstract-shapes-background_1040088-17.jpg);
+    background-image: url("https://github.com/mamyrbekadilet-source/aura/blob/main/gradient-purple-color-abstract-shapes-background_1040088-17.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
