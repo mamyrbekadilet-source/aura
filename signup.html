@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация — Aura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="img/logo-mark.svg">
+
+</head>
+<body>
+    <aside class="sidebar">
+        <a href="index.html" class="logo">Aura</a>
+        <nav class="sidebar-nav">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html">Связаться</a>
+        </nav>
+        <a href="signup.html" class="nav-cta active">Регистрация</a>
+    </aside>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Обратно на главную</a>
+        <h1 class="wlcm">Добро пожаловать!</h1>
+        <div class="line"></div>
+        <p class="opi">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Doloribus enim fugiat perspiciatis sint quibusdam recusandae<br>deserunt dolore error?</p>
+        <a href="index.html" class="gradient-btn">Подробнее</a>
+        <h1 class="signin">Регистрация</h1>
+        <div class="line2"></div>
+        <div class="cont2">
+            <form id="signupForm" novalidate>
+                <h2 class="email">Ваша почта</h2>
+                <input type="email" class="email2" id="emailInput" required>
+                <h2 class="pswd">Ваш пароль</h2>
+                <input type="password" class="pswdd" id="pswdInput" required>
+                <h2 class="pswd2">Повторите пароль</h2>
+                <input type="password" class="pswdd2" id="pswdInput2" required>
+                <p class="error-msg" id="errorMsg"></p>
+                <button type="submit" class="gradient-btn2">Регистрация</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

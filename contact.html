@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Связаться — Aura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/svg+xml" href="img/logo-mark.svg">
+</head>
+<body>
+    <aside class="sidebar">
+        <a href="index.html" class="logo">Aura</a>
+        <nav class="sidebar-nav">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html" class="active">Связаться</a>
+        </nav>
+        <a href="signup.html" class="nav-cta">Регистрация</a>
+    </aside>
+    <main>
+        <section class="contact-hero">
+            <p class="about-kicker">Связаться</p>
+            <h1>Напишите нам — ответим в течение рабочего дня.</h1>
+            <p>
+                Есть вопрос по Aura, идея или нашли ошибку? Расскажите,
+                и мы вернёмся с ответом на вашу почту.
+            </p>
+        </section>
+
+        <section class="contact-main">
+            <div class="contact-form-panel">
+                <h2>Отправить сообщение</h2>
+                <form id="contactForm" novalidate>
+                    <div class="field">
+                        <label for="contactName">Ваше имя</label>
+                        <input type="text" id="contactName" autocomplete="name">
+                    </div>
+                    <div class="field">
+                        <label for="contactEmail">Ваша почта</label>
+                        <input type="email" id="contactEmail" autocomplete="email">
+                    </div>
+                    <div class="field">
+                        <label for="contactTopic">Тема</label>
+                        <select id="contactTopic">
+                            <option value="question">Вопрос по продукту</option>
+                            <option value="bug">Сообщить об ошибке</option>
+                            <option value="idea">Предложить идею</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="contactMessage">Сообщение</label>
+                        <textarea id="contactMessage"></textarea>
+                    </div>
+                    <p class="form-status" id="contactStatus" role="status"></p>
+                    <button type="submit" class="gradient-btn">Отправить сообщение</button>
+                </form>
+            </div>
+
+            <div class="contact-side">
+                <div class="info-card">
+                    <h3>Почта</h3>
+                    <a href="mailto:hello@aura.app">hello@aura.app</a>
+                </div>
+                <div class="info-card">
+                    <h3>Telegram</h3>
+                    <a href="https://t.me/aura_support">@aura_support</a>
+                </div>
+                <div class="info-card">
+                    <h3>Время ответа</h3>
+                    <p>Пн–Пт, с 10:00 до 18:00 по Москве. В выходные отвечаем на следующий рабочий день.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Частые вопросы</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Aura платная?</summary>
+                    <p>Личное планирование бесплатно. Платные тарифы нужны только для больших команд и дополнительных досок.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Сколько человек могут работать на одной доске?</summary>
+                    <p>Доска рассчитана на небольшие команды — до 15 человек. Так она остаётся понятной и без лишнего шума.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Как отключить уведомления?</summary>
+                    <p>По умолчанию они уже выключены. Включить их можно отдельно для нужной задачи или доски.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Можно ли удалить аккаунт и данные?</summary>
+                    <p>Да. Напишите нам через форму выше с темой «Другое», и мы удалим аккаунт вместе со всеми данными.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <span>&copy; 2026 Aura</span>
+        <a href="signup.html">Создать аккаунт</a>
+    </footer>
+    <script src="contact.js"></script>
+</body>
+</html>

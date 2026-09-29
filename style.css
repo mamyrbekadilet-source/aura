@@ -1,0 +1,330 @@
+:root {
+    --ink: #f8f8ff;
+    --ink-dim: rgba(248, 248, 255, 0.72);
+    --glass: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.18);
+    --accent-1: rgb(237, 156, 7);
+    --accent-2: hotpink;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-left: 240px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/gradient-purple-color-abstract-shapes-background_1040088-17.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 36px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    background: rgba(20, 10, 34, 0.55);
+    border-right: 1px solid var(--glass-border);
+    backdrop-filter: blur(14px);
+    z-index: 10;
+}
+
+.sidebar .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sidebar-nav a {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--ink-dim);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-nav a:hover {
+    color: var(--ink);
+    background: var(--glass);
+}
+
+.sidebar-nav a.active {
+    color: var(--ink);
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+}
+
+.sidebar .nav-cta {
+    margin-top: auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 18px;
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    background: var(--glass);
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.sidebar .nav-cta:hover,
+.sidebar .nav-cta.active {
+    background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+    border-color: transparent;
+}
+
+@media (max-width: 1500px) {
+    body {
+        padding-left: 0;
+        padding-top: 76px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 20px;
+        gap: 16px;
+        border-right: none;
+        border-bottom: 1px solid var(--glass-border);
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        gap: 4px;
+    }
+
+    .sidebar .nav-cta {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 760px) {
+    .sidebar-nav {
+        display: none;
+    }
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.back-link {
+    position: absolute;
+    top: 25px;
+    left: 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: white;
+}
+
+.wlcm {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 50px;
+    left: 90px;
+    top: 120px;
+}
+
+.opi {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    color: ghostwhite;
+    font-size: 15px;
+    left: 100px;
+    top: 300px;
+}
+
+.line {
+    position: absolute;
+    border-top: 2px solid white;
+    width: 70px;
+    top: 270px;
+    left: 100px;
+}
+
+.gradient-btn {
+    position: absolute;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(237, 156, 7), hotpink);
+    transition: transform 0.2s ease;
+    top: 450px;
+    left: 100px;
+}
+
+.gradient-btn:hover {
+    transform: scale(1.05);
+}
+
+.signin {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 40px;
+    right: 145px;
+    top: 50px;
+}
+
+.line2 {
+    position: absolute;
+    border-top: 2px solid white;
+    width: 70px;
+    top: 140px;
+    right: 250px;
+}
+
+.cont2 {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    right: 135px;
+    top: 170px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.email {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+    left: 20px;
+    top: 25px;
+}
+
+.pswd {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+    left: 20px;
+    top: 75px;
+}
+
+.pswd2 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+    left: 20px;
+    top: 125px;
+}
+
+.email2 {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    width: 250px;
+    height: 30px;
+}
+
+.pswdd {
+    position: absolute;
+    top: 170px;
+    left: 20px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    width: 250px;
+    height: 30px;
+}
+
+.pswdd2 {
+    position: absolute;
+    top: 260px;
+    left: 20px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    width: 250px;
+    height: 30px;
+}
+
+.error-msg {
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    width: 260px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #ffb3b3;
+}
+
+.error-msg.success {
+    color: #b3ffcb;
+}
+
+.gradient-btn2 {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 12px 55px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(237, 156, 7), hotpink);
+    transition: transform 0.2s ease;
+    top: 330px;
+    left: 45px;
+}
+
+.gradient-btn2:hover {
+    transform: scale(1.05);
+}
+
+
